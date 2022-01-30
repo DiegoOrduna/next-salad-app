@@ -1,3 +1,3 @@
 # next-salad-app
 
-Recipe book made with Next.js
+Recipe book made with Next.js :)
