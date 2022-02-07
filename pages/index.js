@@ -74,7 +74,7 @@ export function getStaticProps() {
   return {
     props: {
       data: {
-        recipes: [{ title: "Mango Kush" }],
+        recipes: [{ title: "Corito Sano" }],
       },
     },
   };
