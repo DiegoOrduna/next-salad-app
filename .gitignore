@@ -4,7 +4,7 @@
 node_modules
 /.pnp
 .pnp.js
-
+.env.local
 # testing
 /coverage
 
@@ -32,3 +32,6 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+#sanity
+studio/config/.checksums
