@@ -1,4 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable react-hooks/rules-of-hooks */
 import { useState } from "react";
+import { useRouter } from "next/router";
 import {
   sanityClient,
   urlFor,
@@ -26,6 +29,7 @@ const recipeQuery = `*[_type == "recipe" && slug.current == $slug][0]{
 
 export default function OneRecipe({ data, preview }) {
   if (!data) return <div>Loading...</div>;
+
   const { data: recipe } = usePreviewSubscription(recipeQuery, {
     params: { slug: data.recipe?.slug.current },
     initialData: data,
